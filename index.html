@@ -5,74 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mansouri Sicherheitsdienst</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
+    body { margin: 0; font-family: Arial, sans-serif; background: #000; color: #fff; }
+    header { 
+      height: 100vh; 
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1557683316-973673baf4a5?w=1600'); 
+      background-size: cover; background-position: center; 
+      display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
     }
-    header {
-      position: relative;
-      height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1557683316-973673baf4a5?w=1600');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .logo {
-      font-size: 4em;
-      font-weight: bold;
-      color: #ffd700; /* طلایی لوکس */
-      margin-bottom: 10px;
-    }
-    .tagline {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-    }
-    .services {
-      margin-top: 50px;
-      font-size: 1.4em;
-    }
-    .contact {
-      position: absolute;
-      bottom: 40px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      font-size: 1.2em;
-    }
-    .contact a {
-      color: #ffd700;
-      text-decoration: none;
-    }
-    .lang-switch {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      background: rgba(255,215,0,0.2);
-      padding: 8px 15px;
-      border-radius: 5px;
-      color: #ffd700;
-    }
+    .logo-img { width: 200px; height: auto; margin-bottom: 20px; }
+    .logo-text { font-size: 4em; font-weight: bold; color: #ffd700; letter-spacing: 5px; }
+    .tag { font-size: 1.8em; color: #ffd700; margin: 20px 0; }
+    .services { font-size: 1.5em; color: #ffd700; margin: 30px 0; }
+    .contact { position: absolute; bottom: 50px; width: 100%; text-align: center; font-size: 1.3em; }
+    .contact a { color: #ffd700; text-decoration: none; margin: 0 30px; }
+    .lang { position: absolute; top: 30px; right: 50px; font-size: 1.2em; }
+    .lang a { color: #ffd700; margin: 0 10px; }
   </style>
 </head>
 <body>
-
   <header>
-    <div class="logo">MANSOURI</div>
-    <div class="tagline">SICHERHEITSDIENST</div>
-    <p class="services">
-      Objektschutz • Videoüberwachung • Veranstaltungsschutz
-    </p>
+    <img src="logo.png" alt="Mansouri Logo" class="logo-img">
+    <div class="logo-text">MANSOURI</div>
+    <div class="tag">SICHERHEITSDIENST</div>
+    <div class="services">Objektschutz • Videoüberwachung • Veranstaltungsschutz</div>
 
-    <div class="lang-switch">
-      <a href="#" style="color:#ffd700;">Deutsch</a> | 
-      <a href="#" style="color:#fff;">English</a>
+    <div class="lang">
+      <a href="#">Deutsch</a> | <a href="#">English</a>
     </div>
 
     <div class="contact">
@@ -81,6 +39,5 @@
       <span>📍 Mainz, Hechtsheim</span>
     </div>
   </header>
-
 </body>
 </html>
